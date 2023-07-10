@@ -1,0 +1,15 @@
+.banner {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: groove;
+}
+
+.banner .banner__div {
+    /* pass */
+}
+
+.banner .banner__div .banner__image {
+    background-image: url(../img/chinchi.jpg)
+}

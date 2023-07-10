@@ -1,8 +1,6 @@
 :root {
     --main-text-color: rgb(255, 255, 255);
-    --main-bg-color: linear-gradient(90deg, rgba(90,30,168,1) 0%, rgba(15,255,224,1) 50%, rgba(90,30,168,1) 100%);
-    --main-brand-color: #0000ff;
-    --main-brand-color-light: #e44c54;
+    --main-bg-color: linear-gradient(90deg, rgba(90,30,168,1) 0%, rgba(15,255,224,1) 50%, rgba(90,30,168,1) 100%);   
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
@@ -10,7 +8,6 @@
 .main-bg {
     color: var(--main-text-color);
     background: var(--main-bg-color);
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
