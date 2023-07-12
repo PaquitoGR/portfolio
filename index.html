@@ -46,7 +46,7 @@
             </nav> 
         </div>
     </header>
-    <main class="main-bg">
+    <main>
         <section class="bio">
             <a name="bio"></a>
             <div>
@@ -107,11 +107,74 @@
             </div>
         </section>
         <section class="contact">
-            <div class="banner__div">
-                <p>AQUI VA EL FORMULARIO DE CONTACTO</p>
-            </div>
-        </section>
-    </main>
+            <form class="form" method="post" action="registro.html">
+                <div class="form__element">
+                    <label class="form__label" for="name">Nombre</label>
+                    <input
+                    class="form__input"
+                    id="name" type="name" placeholder="Pon tu nombre" name="name">
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="surname">Apellidos</label>
+                    <input
+                    class="form__input"
+                    id="surname" type="surname" placeholder="Pon tus apellidos" name="surname">
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="age">Age</label>
+                    <input class="form__input" type="number" id="age" required min="18" max="65">
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="pwd">Password</label>
+                    <input class="form__input" type="password" id="pwd" name="pwd" required>
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="phone">Phone</label>
+                    <input
+                    class="form__input" 
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    title="Format is 600-000-0000"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required> 
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="avatar">Avatar image</label>
+                    <input class="form__input" type="file" id="avatar" accept="image/png, image/jpeg">
+                </div>
+                <fieldset class="form__element">
+                    <legend>Fav category</legend>
+                    <div>
+                        <label for="shows">Shows</label>
+                        <input type="radio" id="shows" name="category" checked value="shows">
+                        <label for="docus">Docus</label>
+                        <input type="radio" id="docus" name="category" value="docus">
+                    </div>
+                </fieldset>
+                <div class="form__element">
+                    <label class="form__label" for="bio">Bio</label>
+                    <textarea class="form__input" name="bio" id="bio" placeholder="Add your bio" required minlength="10" maxlength="240"></textarea>
+                </div>
+                <div class="form__element form__element--checkbox">
+                    <input class="form__input" type="checkbox" name="remember" id="remember" checked>
+                    <label class="form__label" for="remember">Remember me</label>
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="country">country</label>
+                    <select name="country" id="country" required>
+                        <option value="">Select one country</option>
+                        <option value="es">Spain</option>
+                        <option value="us">USA</option>
+                    </select>
+                </div>
+                <div class="form__element">
+                    <button class="btn" type="reset">Reset</button>
+                    <input class="form__input" class="btn" type="submit" value="Sign in">
+                </div>
+            </form>
+</section>
+</main>
     <footer class="footer">
         <div class="footer__social">
             <a name="social"></a>

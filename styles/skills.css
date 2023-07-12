@@ -1,12 +1,12 @@
-.skills {
-    width: 90%;
-}
-
 .skills__item__container {
     border-color: white;
     border-style: solid;
     border-radius: 20px;
     height: 20px;
+}
+
+.skills__list {
+    padding-left: 0px;
 }
 
 .skills__item__title {
