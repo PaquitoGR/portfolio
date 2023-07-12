@@ -12,37 +12,39 @@
     <meta name="twitter:card" content="summary">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/banner.css">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/skills.css">
     <title>Portfolio under construction</title>
 </head>
 <body class="main-bg">
     <header class="header">
-        <div class="header__image">
-            <img src="img/suki-logo.jpg" alt="Chinchilla">
+        <div class="header__items">
+            <div class="header__image">
+                <img src="img/suki-logo.jpg" alt="Chinchilla">
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav__list">
+                    <li class="header__nav__list__item">
+                        <a class="btn " href="#bio">Sobre mí</a>
+                    </li>
+                    <li class="header__nav__list__item">
+                        <a class="btn hidden-xs" href="#">Proyectos</a>
+                    </li>
+                    <li class="header__nav__list__item">
+                        <a class="btn hidden-xs" href="#">Skills</a>
+                    </li>
+                    <li class="header__nav__list__item">
+                        <a class="btn hidden-xs" href="#social">Social</a>
+                    </li>
+                    <li class="header__nav__list__item">
+                        <a class="btn hidden-xs" href="#">Mi CV</a>
+                    </li>
+                </ul>
+            </nav> 
         </div>
-        <nav class="header__nav">
-            <ul class="header__nav__list">
-                <li class="header__nav__list__item">
-                    <a class="btn " href="#bio">Sobre mí</a>
-                </li>
-                <li class="header__nav__list__item">
-                    <a class="btn hidden-xs" href="#">Proyectos</a>
-                </li>
-                <li class="header__nav__list__item">
-                    <a class="btn hidden-xs" href="#">Skills</a>
-                </li>
-                <li class="header__nav__list__item">
-                    <a class="btn hidden-xs" href="#social">Social</a>
-                </li>
-                <li class="header__nav__list__item">
-                    <a class="btn hidden-xs" href="#">Mi CV</a>
-                </li>
-            </ul>
-        </nav> 
     </header>
     <main class="main-bg">
         <section class="bio">
@@ -50,10 +52,35 @@
             <div>
                 <h1>Francisco A. Suárez</h1>
                 <p>
-                    Aficionado desde pequeño al mundo de la tecnología, las circunstancias me llevaron por otro camino, hasta que por fin, en 2022 me he propuse seguir mi vocación y dedicarme a lo que realmente me entusiasma: el desarrollo web.
-                    A pesar de no haber estado involucrado en este campo desde que conseguí mi título de técnico superior en administración de sistemas, nunca he dejado de interesarme y aprender sobre fundamentos del desarrollo de software con varios lenguajes, cursando recientemente un bootcamp de devops.
+                    Aficionado desde pequeño al mundo de la tecnología, las circunstancias me llevaron por otro camino hasta que por fin, en 2022, me propuse seguir mi vocación y dedicarme a lo que realmente me entusiasma: el desarrollo web.
+                    A pesar de no haber estado involucrado en este campo desde que conseguí mi título de técnico superior en administración de sistemas, nunca he dejado de interesarme y aprender sobre fundamentos del desarrollo de software con varios lenguajes.
                 </p>
             </div>            
+        </section>
+        <section class="skills">
+            <h2>Mis skills</h2>
+            <div class="skills__container">
+                <ul class="skills__list">
+                    <li class="skills__item">
+                        <h3>HTML/CSS</h3>
+                    </li>
+                    <li class="skills__item">
+                        JavaScript
+                    </li>
+                    <li class="skills__item">
+                        Python
+                    </li>
+                    <li class="skills__item">
+                        Java
+                    </li>
+                    <li class="skills__item">
+                        Kubernetes
+                    </li>
+                    <li class="skills__item">
+                        Cocina
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="banner">
             <div class="banner__div">
