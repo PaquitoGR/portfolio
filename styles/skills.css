@@ -1,0 +1,44 @@
+.skills {
+    width: 90%;
+}
+
+.skills__item__container {
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    height: 20px;
+}
+
+.skills__item__title {
+    margin-bottom: 5px;
+}
+
+.skills__item__bar {
+    border-radius: 20px;
+    height: 15px;
+    background: #79134d;
+}
+
+#html--bar {
+    max-width: 40%;
+}
+
+#javascript--bar {
+    max-width: 60%;
+}
+
+#python--bar {
+    max-width: 75%;
+}
+
+#java--bar {
+    max-width: 30%;
+}
+
+#kubernetes--bar {
+    max-width: 70%;
+}
+
+#cocina--bar {
+    max-width: 100%;
+}
