@@ -4,6 +4,7 @@
    z-index: 999;
    top: 0;
    padding: 10px;
+   opacity: 0.9;
 }
 
 .header .header__items {
@@ -27,7 +28,7 @@
    text-decoration: none;
 }
 
-.hidden-xs {
+/* .hidden-xs {
    display: none;
 }
 
@@ -38,4 +39,4 @@
    .hidden-xs {
       display: inherit;
    }
-}
+} */

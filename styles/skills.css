@@ -1,8 +1,11 @@
 .skills__item__container {
+    background: white;
     border-color: white;
     border-style: solid;
+    border-width: 3px;
     border-radius: 20px;
     height: 20px;
+    opacity: 0.9;
 }
 
 .skills__list {
@@ -15,8 +18,9 @@
 
 .skills__item__bar {
     border-radius: 20px;
-    height: 15px;
+    height: 14px;
     background: #79134d;
+
 }
 
 #html--bar {
