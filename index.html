@@ -47,6 +47,11 @@
         </div>
     </header>
     <main>
+        <section class="banner">
+            <div class="banner__div">
+                <div class="banner__image"></div>
+            </div>
+        </section>
         <section class="aboutme">
             <a name="aboutme"></a>
             <div>
@@ -101,12 +106,6 @@
                 </ul>
             </div>
         </section>
-        <section class="banner">
-            <div class="banner__div">
-                <p>ESTE ES EL BANNER</p>
-                <div class="banner__image"></div>
-            </div>
-        </section>
         <section class="contact">
             <a name="contact"></a>
             <form class="form" method="post" action="registro.html">
@@ -135,24 +134,25 @@
                     required> 
                 </div>
                 <div class="form__element">
-                    <label class="form__label">¿Cómo me conociste?</label>
-                    <div>
-                        <label for="universidad">Universidad</label>
-                        <input type="radio" id="universidad" name="universidad" checked value="universidad">
-                    </div>
-                    <div>
-                        <label for="kick-off">Keepcoding kick-off</label>
-                        <input type="radio" id="kick-off" name="kick-off" value="kick-off">
-                    </div>
-                    <div>                        
-                        <label for="colegio">Colegio</label>
-                        <input type="radio" id="colegio" name="colegio" value="colegio">
-                    </div>
-                    <div>
-                        <label for="github">GitHub</label>
-                        <input type="radio" id="github" name="github" value="github">
-                    </div>
-                    
+                    <label class="form__radio--title">¿Cómo me conociste?</label>
+                    <div class="form__radio--container">
+                        <div>
+                            <label class="form__radio--label" for="universidad">Universidad</label>
+                            <input type="radio" id="universidad" name="meet" checked value="university">
+                        </div>
+                        <div>
+                            <label class="form__radio--label" for="kick-off">Keepcoding kick-off</label>
+                            <input type="radio" id="kick-off" name="meet" value="kick-off">
+                        </div>
+                        <div>                        
+                            <label class="form__radio--label" for="colegio">Colegio</label>
+                            <input type="radio" id="colegio" name="meet" value="school">
+                        </div>
+                        <div>
+                            <label class="form__radio--label" for="github">GitHub</label>
+                            <input type="radio" id="github" name="wmeet" value="github">
+                        </div>
+                    </div>                    
                 </div>
                 <div class="form__element">
                     <label class="form__label" for="more--info">Mas información</label>

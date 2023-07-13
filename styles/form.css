@@ -22,3 +22,14 @@
 .form__element--checkbox {
     flex-direction: row;
 }
+
+.form__element .form__radio--label {
+    
+    font-style: italic;
+}
+
+.form__element .form__radio--container div{
+    margin-left: 20px ;
+    margin-bottom: 10px;
+
+}
