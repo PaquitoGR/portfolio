@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/banner.css">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/skills.css">
-    <title>Portfolio under construction</title>
+    <title>Portfolio</title>
 </head>
 <body class="main-bg">
     <header class="header">
@@ -48,7 +48,7 @@
                                 <a class="btn hidden-xs" href="#contact">Contacto</a>
                             </li>
                             <li class="header__nav__list__item">
-                                <a class="btn hidden-xs" href="#">Proyectos</a>
+                                <a class="btn hidden-xs" href="portfolio.html">Proyectos</a>
                             </li>
                         </ul>
                     </nav>
@@ -78,8 +78,15 @@
     <main>
         <section class="banner">
             <div class="banner__image"></div>
-            <div class="banner__content">
+            <!-- <div class="banner__content">
                 <h1>Francisco A. Suárez</h1>
+            </div> -->
+            <div class="banner__content">
+                <h1 class="banner__text">
+                    <span class="title-word title-word-1">Francisco</span>
+                    <span class="title-word title-word-2">A.</span>
+                    <span class="title-word title-word-3">Suárez</span>
+                </h1>
             </div>
             <a name="aboutme"></a>
         </section>
@@ -144,13 +151,13 @@
                     <label class="form__label" for="name">Nombre</label>
                     <input
                     class="form__input"
-                    id="name" type="name" placeholder="Pon tu nombre" name="name">
+                    id="name" type="text" placeholder="Pon tu nombre" name="name">
                 </div>
                 <div class="form__element">
                     <label class="form__label" for="surname">Apellidos</label>
                     <input
                     class="form__input"
-                    id="surname" type="surname" placeholder="Pon tus apellidos" name="surname">
+                    id="surname" type="text" placeholder="Pon tus apellidos" name="surname">
                 </div>
                 <div class="form__element">
                     <label class="form__label" for="phone">Teléfono</label>
@@ -181,13 +188,25 @@
                         </div>
                         <div>
                             <label class="form__radio--label" for="github">GitHub</label>
-                            <input type="radio" id="github" name="wmeet" value="github">
+                            <input type="radio" id="github" name="meet" value="github">
                         </div>
                     </div>                    
                 </div>
                 <div class="form__element">
+                    <label class="form__label" for="github">Github username</label>
+                    <input
+                    class="form__input" 
+                    type="text"
+                    name="github-tag"
+                    id="github-tag"
+                    title="Formato (@<username>)"
+                    placeholder="Formato (@<username>)"
+                    pattern="^@[^\s]+"
+                    required> 
+                </div>
+                <div class="form__element">
                     <label class="form__label" for="more--info">Mas información</label>
-                    <textarea class="form__input" name="more--info" id="more--info" placeholder="Qué mas quieres saber" required minlength="10" maxlength="240" rows="6"></textarea>
+                    <textarea class="form__input" name="more--info" id="more--info" placeholder="Qué mas quieres saber" required minlength="10" maxlength="180" rows="6"></textarea>
                 </div>
                 <div class="form__element form__element--checkbox">
                     <label class="form__label" for="newsletter">Suscribirme a la newsletter</label>
@@ -197,16 +216,16 @@
                     <button class="btn" type="reset">Reset</button>
                 </div>
             </form>
-</section>
-</main>
+    </section>
+    </main>
     <footer class="footer">
         <div class="footer__social">
             <a name="social"></a>
-            <div class="footer__social__list">
-                <div>twitter</div>
-                <div>linkd'in</div>
-                <div>github</div>
-            </div>
+            <ul class="footer__social__list">
+                <li><a href="https://twitter.com/Fasuco">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/francisco-a-suarez/">LinkdIn</a></li>
+                <li><a href="https://github.com/PaquitoGR">GitHub</a></li>
+            </ul>
         </div>
     </footer>
 </body>

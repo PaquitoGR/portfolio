@@ -20,7 +20,7 @@
     border-radius: 20px;
     height: 14px;
     background: #79134d;
-    animation: bar-animation 5s;
+    animation: bar-animation 5s ease infinite alternate;
 }
 
 
