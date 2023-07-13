@@ -20,15 +20,16 @@
     border-radius: 20px;
     height: 14px;
     background: #79134d;
-
+    animation: bar-animation 5s;
 }
 
-#html--bar {
-    max-width: 40%;
+
+#html--bar {    
+    max-width: 40%;    
 }
 
 #javascript--bar {
-    max-width: 60%;
+    max-width: 60%;   
 }
 
 #python--bar {
@@ -45,4 +46,14 @@
 
 #cocina--bar {
     max-width: 100%;
+}
+
+@keyframes bar-animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
