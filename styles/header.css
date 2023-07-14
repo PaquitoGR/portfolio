@@ -1,44 +1,22 @@
 .header {
    position: sticky;
+   height: 75px;
    background: linear-gradient(45deg, rgba(229,9,20,1) 0%, #0e1b4f 70%, #000413 100%);
    z-index: 999;
    top: 0;
    padding: 10px;
    opacity: 0.9;
+
 }
 
 .header .header__items {
    display: flex;
-   justify-content: space-between;
 }
 
 .header__image img {
    border-radius: 5px;
    width: 75px;
 }
-
-.header .header__nav .header__nav__list {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-
-.header__nav .header__nav__list .header__nav__list__item a {
-   text-decoration: none;
-}
-
-/* .hidden-xs {
-   display: none;
-}
-
-@media (768px <= width) {
-   .header .header__image {
-      width: 200px;
-   }
-   .hidden-xs {
-      display: inherit;
-   }
-} */
 
 #toggle {
   display: none;
@@ -68,7 +46,7 @@
 /**
 Nav Styles
 **/
-.nav {
+.header__nav {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -78,19 +56,21 @@ Nav Styles
   transition: all 0.3s ease-in-out;
   transform: scale(0);
 }
+
 .nav-wrapper {
   position: relative;
   overflow: hidden;
   overflow-y: auto;
   height: 100%;
 }
+
 nav {
   text-align: left;
   margin-left: 20%;
 }
+
 nav a {
   position: relative;
-  text-decoration: none;
   color: var(--main-text-color);
   font-size: 2em;
   display: inline-block;
@@ -98,18 +78,21 @@ nav a {
   transition: color 0.2s ease-in-out;
   letter-spacing: 1px;
 }
-nav a:before {
+
+nav a::before {
   content: '';
   height: 0;
   position: absolute;
-  width: 0.25em;
+  width: 0.20em;
   background-color: white;
-  left: -0.5em;
+  left: -0.3em;
   transition: all 0.2s ease-in-out;
 }
+
 nav a:hover {
-  color: white;
+  color: rgb(130, 71, 71);
 }
+
 nav a:hover:before {
   height: 100%;
 }
@@ -130,7 +113,41 @@ Animations
   margin-top: -7px;
 }
 
-#toggle:checked + .hamburger + .nav {
+#toggle:checked + .hamburger + .header__nav {
   top: 0;
   transform: scale(1);
 }
+
+@media (768px < width) {
+  .header .header__nav .header__nav__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+  }
+  .header .header__image {
+      width: 200px;
+  }
+  .header__nav {
+    position: inherit;
+    transform: scale(1);
+    transition: none;
+    background-color: transparent;
+    height: 100%;    
+  }
+  .header__nav nav {
+    margin-left: 0;
+  } 
+  .header__nav nav a {
+    margin-top: 0;
+  }
+  .hidden {
+    display: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+} 
