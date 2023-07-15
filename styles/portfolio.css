@@ -7,9 +7,11 @@
 
 .projects__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 75px);
     gap: 15px;
-    text-align: center;
+    text-align: center;    
 }
 
 @keyframes fade-in {

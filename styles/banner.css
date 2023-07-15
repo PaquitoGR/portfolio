@@ -19,8 +19,14 @@
     left: 0;
     top: 0;
     z-index: 0;
-    background-image: url(../img/chinchi.jpg);
-    background-size: cover;
+    background-image: url(../assets/img/chinchi-avatar.png);
+}
+
+@media (768px < width) {
+  .banner .banner__image{
+    background-image: url(../assets/img/chinchi.jpg);
+    
+  }
 }
 
 .banner__content .title {
