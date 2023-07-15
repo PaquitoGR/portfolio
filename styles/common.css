@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
 }
 
 html {
@@ -27,4 +28,5 @@ li {
 
 section {
     padding: 0px 20px 0px 20px;
+    
 }
