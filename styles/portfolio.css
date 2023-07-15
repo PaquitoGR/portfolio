@@ -5,7 +5,7 @@
 
 }
 
-.projects {
+.projects__container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -13,9 +13,9 @@
 }
 
 .projects div {
-    padding: 20px 30px;
-    border-style: groove;
+    padding: 20px 20px;
 }
+
 @keyframes fade-in {
     0% {
         opacity: 0;

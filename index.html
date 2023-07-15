@@ -69,8 +69,8 @@
             <a name="aboutme"></a>
         </section>
         <section class="aboutme">
-            <div>
-                <h2>Sobre mí</h2>
+            <h2 class="title">Sobre mí</h2>
+            <div class="card">
                 <p>
                     Aficionado desde pequeño a la tecnología, las circunstancias me llevaron por otro camino hasta que por fin, en 2022, me propuse seguir mi vocación y dedicarme a lo que realmente me entusiasma: el desarrollo web.
                     <a name="skills"></a>
@@ -79,8 +79,8 @@
             </div>            
         </section>
         <section class="skills">
-            <div class="skills__container">
-                <h2>Mis skills</h2>
+            <h2 class="title">Mis skills</h2>
+            <div class="skills__container card">
                 <ul class="skills__list">
                     <li class="skills__item">
                         <h4 class="skills__item__title">HTML/CSS</h4>
@@ -123,19 +123,19 @@
             </div>
         </section>
         <section class="contact">
-            <h2>Contacto</h2>
-            <form class="form" method="post" action="registro.html">                
+            <h2 class="title">Contacto</h2>
+            <form class="form card" method="post" action="registro.html">                
                 <div class="form__element">
                     <label class="form__label" for="name">Nombre</label>
                     <input
                     class="form__input"
-                    id="name" type="text" placeholder="Pon tu nombre" name="name">
+                    id="name" type="text" placeholder="Pon tu nombre" name="name" required>
                 </div>
                 <div class="form__element">
                     <label class="form__label" for="surname">Apellidos</label>
                     <input
                     class="form__input"
-                    id="surname" type="text" placeholder="Pon tus apellidos" name="surname">
+                    id="surname" type="text" placeholder="Pon tus apellidos" name="surname" required>
                 </div>
                 <div class="form__element">
                     <label class="form__label" for="phone">Teléfono</label>
@@ -154,19 +154,19 @@
                     <div class="form__radio--container">
                         <div>
                             <label class="form__radio--label" for="universidad">Universidad</label>
-                            <input type="radio" id="universidad" name="meet" checked value="university">
+                            <input type="radio" class="radio" id="universidad" name="meet" checked value="university">
                         </div>
                         <div>
                             <label class="form__radio--label" for="kick-off">Keepcoding kick-off</label>
-                            <input type="radio" id="kick-off" name="meet" value="kick-off">
+                            <input type="radio" class="radio" id="kick-off" name="meet" value="kick-off">
                         </div>
                         <div>                        
                             <label class="form__radio--label" for="colegio">Colegio</label>
-                            <input type="radio" id="colegio" name="meet" value="school">
+                            <input type="radio" class="radio" id="colegio" name="meet" value="school">
                         </div>
                         <div>
                             <label class="form__radio--label" for="github">GitHub</label>
-                            <input type="radio" id="github" name="meet" value="github">
+                            <input type="radio" class="radio" id="github" name="meet" value="github">
                         </div>
                     </div>                    
                 </div>
@@ -177,18 +177,19 @@
                     type="text"
                     name="github-tag"
                     id="github-tag"
-                    title="Formato (@<username>)"
-                    placeholder="Formato (@<username>)"
-                    pattern="^@[^\s]+"
-                    required> 
+                    title="Formato @<username>"
+                    placeholder="Formato @<username>"
+                    pattern="^@[^\s]+"> 
                 </div>
                 <div class="form__element">
                     <label class="form__label" for="more--info">Mas información</label>
                     <textarea class="form__input" name="more--info" id="more--info" placeholder="Qué mas quieres saber" required minlength="10" maxlength="180" rows="6"></textarea>
                 </div>
-                <div class="form__element form__element--checkbox">
-                    <label class="form__label" for="newsletter">Suscribirme a la newsletter</label>
-                    <input class="form__input" type="checkbox" name="newsletter" id="newsletter" checked>                   
+                <div class="form__element">
+                    <div class="form__newsletter__container">
+                        <input class="form__input" type="checkbox" name="newsletter" checked>                   
+                        <label class="form__label" for="newsletter" >Suscribirme a la newsletter</label>
+                    </div>
                 </div class="form__buttons">
                     <button class="btn" type="submit">Enviar</button>
                     <button class="btn" type="reset">Reset</button>
