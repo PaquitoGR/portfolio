@@ -5,6 +5,15 @@
 
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects div {
+    padding: 20px 30px;
+    border-style: groove;
+}
 @keyframes fade-in {
     0% {
         opacity: .1;
