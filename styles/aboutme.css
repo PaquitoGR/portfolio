@@ -1,0 +1,9 @@
+.aboutme__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutme__items picture {
+    max-width: 90%;
+}

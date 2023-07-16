@@ -70,13 +70,12 @@
         </section>
         <section class="aboutme">
             <h2 class="title">Sobre mí</h2>
-            <div class="aboutme__image card">
+            <div class="card">                
                 <p>
                     Aficionado desde pequeño a la tecnología, las circunstancias me llevaron por otro camino hasta que por fin, en 2022, me propuse seguir mi vocación y dedicarme a lo que realmente me entusiasma: el desarrollo web.
                     <a name="skills"></a>
                     A pesar de no haber estado involucrado en este campo desde que conseguí mi título de técnico superior en administración de sistemas, nunca he dejado de interesarme y aprender sobre fundamentos del desarrollo de software con varios lenguajes.
                 </p>
-                <img src="/assets/img/thisisengineering-raeng-unsplash-small.jpg" alt="nightsky">
             </div>            
         </section>
         <section class="skills">
@@ -125,78 +124,85 @@
         </section>
         <section class="contact">
             <h2 class="title">Contacto</h2>
-            <form class="form card" method="post" action="registro.html">                
-                <div class="form__element">
-                    <label class="form__label" for="name">Nombre</label>
-                    <input
-                    class="form__input"
-                    id="name" type="text" placeholder="Pon tu nombre" name="name" required>
-                </div>
-                <div class="form__element">
-                    <label class="form__label" for="surname">Apellidos</label>
-                    <input
-                    class="form__input"
-                    id="surname" type="text" placeholder="Pon tus apellidos" name="surname" required>
-                </div>
-                <div class="form__element">
-                    <label class="form__label" for="phone">Teléfono</label>
-                    <input
-                    class="form__input" 
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    title="formato 000-000-0000"
-                    placeholder="Formato 000-000-0000"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    required> 
-                </div>
-                <div class="form__element">
-                    <label class="form__radio--title">¿Cómo me conociste?</label>
-                    <div class="form__radio--container">
-                        <div>
-                            <label class="form__radio--label" for="universidad">Universidad</label>
-                            <input type="radio" class="radio" id="universidad" name="meet" checked value="university">
+            <form class="form card" method="post" action="registro.html">
+                <div class="flex__container">
+                    <div class="flex__column__1">            
+                        <div class="form__element">
+                            <label class="form__label" for="name">Nombre</label>
+                            <input
+                            class="form__input"
+                            id="name" type="text" placeholder="Pon tu nombre" name="name" required>
                         </div>
-                        <div>
-                            <label class="form__radio--label" for="kick-off">Keepcoding kick-off</label>
-                            <input type="radio" class="radio" id="kick-off" name="meet" value="kick-off">
+                        <div class="form__element">
+                            <label class="form__label" for="surname">Apellidos</label>
+                            <input
+                            class="form__input"
+                            id="surname" type="text" placeholder="Pon tus apellidos" name="surname" required>
                         </div>
-                        <div>                        
-                            <label class="form__radio--label" for="colegio">Colegio</label>
-                            <input type="radio" class="radio" id="colegio" name="meet" value="school">
+                        <div class="form__element">
+                            <label class="form__label" for="phone">Teléfono</label>
+                            <input
+                            class="form__input" 
+                            type="tel"
+                            name="phone"
+                            id="phone"
+                            title="formato 000-000-0000"
+                            placeholder="Formato 000-000-0000"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            required> 
                         </div>
+                        <div class="form__element">
+                            <label class="form__radio--title">¿Cómo me conociste?</label>
+                            <div class="form__radio--container">
+                                <div>
+                                    <label class="form__radio--label" for="universidad">Universidad</label>
+                                    <input type="radio" class="radio" id="universidad" name="meet" checked value="university">
+                                </div>
+                                <div>
+                                    <label class="form__radio--label" for="kick-off">Keepcoding kick-off</label>
+                                    <input type="radio" class="radio" id="kick-off" name="meet" value="kick-off">
+                                </div>
+                                <div>                        
+                                    <label class="form__radio--label" for="colegio">Colegio</label>
+                                    <input type="radio" class="radio" id="colegio" name="meet" value="school">
+                                </div>
+                            </div>
+                        </div>               
+                    </div>
+                    <div class="flex__column__2">
                         <div>
                             <label class="form__radio--label" for="github">GitHub</label>
                             <input type="radio" class="radio" id="github" name="meet" value="github">
                         </div>
-                    </div>                    
-                </div>
-                <div class="form__element">
-                    <label class="form__label" for="github">Github username</label>
-                    <input
-                    class="form__input" 
-                    type="text"
-                    name="github-tag"
-                    id="github-tag"
-                    title="Formato @<username>"
-                    placeholder="Formato @<username>"
-                    pattern="^@[^\s]+"> 
-                </div>
-                <div class="form__element">
-                    <label class="form__label" for="more--info">Mas información</label>
-                    <textarea class="form__input" name="more--info" id="more--info" placeholder="Qué mas quieres saber" required minlength="10" maxlength="180" rows="6"></textarea>
-                </div>
-                <div class="form__element">
-                    <div class="form__newsletter__container">
-                        <input class="form__input" type="checkbox" name="newsletter" checked>                   
-                        <label class="form__label" for="newsletter" >Suscribirme a la newsletter</label>
+                        <div class="form__element">
+                            <label class="form__label" for="github">Github username</label>
+                            <input
+                            class="form__input" 
+                            type="text"
+                            name="github-tag"
+                            id="github-tag"
+                            title="Formato @<username>"
+                            placeholder="Formato @<username>"
+                            pattern="^@[^\s]+"> 
+                        </div>
+                        <div class="form__element">
+                            <label class="form__label" for="more--info">Mas información</label>
+                            <textarea class="form__input" name="more--info" id="more--info" placeholder="Qué mas quieres saber" required minlength="10" maxlength="180" rows="6"></textarea>
+                        </div>
+                        <div class="form__element">
+                            <div class="form__newsletter__container">
+                                <input class="form__input" type="checkbox" name="newsletter" checked>                   
+                                <label class="form__label" for="newsletter" >Suscribirme a la newsletter</label>
+                            </div>
+                        </div>
                     </div>
+                </div>
                 </div class="form__buttons">
                     <button class="btn" type="submit">Enviar</button>
                     <button class="btn" type="reset">Reset</button>
                 </div>
             </form>
-    </section>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__social">

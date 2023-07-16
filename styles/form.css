@@ -24,3 +24,20 @@
     margin-bottom: 10px;
 
 }
+
+@media (768px < width) {
+    .contact .form .flex__container {
+        display: flex;
+        justify-content: space-around;
+        gap: 15px;     
+    }
+    .flex__container .flex__column__1 {
+        flex-grow: 1;
+    }
+    .flex__container .flex__column__2 {
+        flex-grow: 1;
+    }
+    .form__buttons {
+        align-self: flex-end;
+    }
+}
