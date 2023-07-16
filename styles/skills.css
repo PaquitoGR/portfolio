@@ -61,6 +61,21 @@
 @media (1080px < width) {
     .skills__list {
         display: grid;
-        ;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+@media (1440px < width) {
+    .skills__list {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+
+        text-align: center;
+        gap: 20px;
     }
 }
