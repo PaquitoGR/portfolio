@@ -167,12 +167,23 @@ nav a:hover:before {
 
 } 
 
-@media (768px <= width) {
-  
+@media (768px < width) {
+  .header__items {
+    max-width: 85%;
+    
+  }
+}
+
+@media (1080px < width) {
+  .header__items {
+    max-width: 55%;
+      
+  }
 }
 
 @media (1440px < width) {
-  main {
-      max-width: 50%;
+  .header__items {
+    max-width: 50%;
+      
   }
 }

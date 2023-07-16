@@ -46,7 +46,7 @@ section {
     margin-bottom: 0px;
 }
 
-@media (768px <= width) {
+@media (768px < width) {
     main {
         max-width: 60%;
     }
