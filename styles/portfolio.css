@@ -8,11 +8,22 @@
 .projects__container {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 75px);
-    gap: 15px;
-    text-align: center;    
+    grid-template-columns: repeat(2, 2fr);    
+    text-align: center;
+    gap: 20px;
 }
+
+.projects .projects__container figure {
+    margin: 0;
+    border-radius: 5px;
+}
+
+.projects .projects__container img {
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
 
 @keyframes fade-in {
     0% {

@@ -10,6 +10,11 @@
 .banner .banner__content {
     z-index: 1;
     position: relative;
+    background-color: rgba(255, 255, 255, .8);
+    width: 320px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, .8);
 }
 
 .banner .banner__image {
