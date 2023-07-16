@@ -140,9 +140,6 @@ nav a:hover:before {
     font-size: smaller;
     gap: 20px;
   }
-  .header .header__items {    
-    
-  }
   .header .header__image {
       width: 100px;
   }
@@ -163,21 +160,20 @@ nav a:hover:before {
   }
   .header .hidden {
     display: none;
-  }  
-
+  }
+  .header__items {
+    width: 75%;    
+  }
 } 
 
-@media (768px < width) {
+@media (1024px < width) {
   .header__items {
-    width: 60%;
-    
+    width: 60%;      
   }
 }
-/* 
-@media (1080px < width) {
-  .header__items {
-    width: 60%;
-      
-  }
-} */
 
+@media (1440px < width) {
+  .header__items {
+    width: 50%;      
+  }
+}

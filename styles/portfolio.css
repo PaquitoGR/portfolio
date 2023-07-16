@@ -8,7 +8,7 @@
 .projects__container {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2, 2fr);    
+    grid-template-columns: repeat(2, 1fr);    
     text-align: center;
     gap: 20px;
 }
@@ -34,5 +34,11 @@
     }
     100% {
         opacity: 1;        
+    }
+}
+
+@media (1440px <= width) {
+    .projects__container {
+        grid-template-columns: repeat(3, 1fr);   
     }
 }

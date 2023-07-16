@@ -34,7 +34,7 @@
   }
 }
 
-@media (144px < width) {
+@media (1440px < width) {
   .banner .banner__image {
     background-image: url(../assets/img/neom-unsplash-4k.jpg);
   }
@@ -48,20 +48,20 @@
   }
   
   .title-word-1 {
-    --color-1: #DF8453;
-    --color-2: #3D8DAE;
-    --color-3: #E4A9A8;
+    --color-1: var(--secondary-color);
+    --color-2: #316be9;
+    --color-3: var(--main-bg-color);
   }
   
   .title-word-2 {
-    --color-1: #DBAD4A;
+    --color-1: #13b28f;
     --color-2: #ACCFCB;
-    --color-3: #17494D;
+    --color-3: var(--main-bg-color);
   }
   
   .title-word-3 {
     --color-1: #ACCFCB;
-    --color-2: #E4A9A8;
+    --color-2: var(--secondary-color);
     --color-3: #ACCFCB;
   }
 
