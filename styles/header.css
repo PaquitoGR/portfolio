@@ -1,7 +1,7 @@
 .header {
    position: sticky;
    height: 75px;
-   background: linear-gradient(45deg, rgba(229,9,20,1) 0%, #0e1b4f 70%, #000413 100%);
+   background: linear-gradient(45deg, var(--secondary-color) 0%, #0e1b4f 70%, #000413 100%);
    z-index: 999;
    top: 0;
    padding: 10px 0px;

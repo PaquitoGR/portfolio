@@ -19,7 +19,7 @@
 .skills__item__bar {
     border-radius: 20px;
     height: 14px;
-    background: #79134d;
+    background: var(--secondary-color);
     animation: bar-animation 5s ease infinite alternate;
 }
 
@@ -55,5 +55,12 @@
 
     100% {
         width: 100%;
+    }
+}
+
+@media (1080px < width) {
+    .skills__list {
+        display: grid;
+        ;
     }
 }

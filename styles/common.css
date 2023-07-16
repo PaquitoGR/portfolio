@@ -1,6 +1,7 @@
 :root {
     --main-text-color: rgb(255, 255, 255);
-    --main-bg-color: rgb(15, 36, 87);   
+    --main-bg-color: rgb(15, 36, 87);
+    --secondary-color:  rgb(0, 175, 148);
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
 }
@@ -45,9 +46,20 @@ section {
     margin-bottom: 0px;
 }
 
-@media (768px < width) {
+@media (768px <= width) {
     main {
         max-width: 60%;
-        align-self: center;
+    }
+}
+
+@media (1440px < width) {
+    main {
+        max-width: 50%;
+    }
+}
+
+@media (1440px < width) {
+    main {
+        max-width: 50%;
     }
 }
