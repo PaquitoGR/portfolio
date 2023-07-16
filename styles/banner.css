@@ -28,9 +28,15 @@
 }
 
 @media (768px < width) {
-  .banner .banner__image{
+  .banner .banner__image {
     background-image: url(../assets/img/neom-unsplash-med.jpg);
     
+  }
+}
+
+@media (144px < width) {
+  .banner .banner__image {
+    background-image: url(../assets/img/neom-unsplash-4k.jpg);
   }
 }
 

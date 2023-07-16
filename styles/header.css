@@ -144,7 +144,7 @@ nav a:hover:before {
     
   }
   .header .header__image {
-      width: 200px;
+      width: 100px;
   }
   .header__nav {
     position: inherit;
@@ -169,21 +169,15 @@ nav a:hover:before {
 
 @media (768px < width) {
   .header__items {
-    max-width: 85%;
+    width: 60%;
     
   }
 }
-
+/* 
 @media (1080px < width) {
   .header__items {
-    max-width: 55%;
+    width: 60%;
       
   }
-}
+} */
 
-@media (1440px < width) {
-  .header__items {
-    max-width: 50%;
-      
-  }
-}
