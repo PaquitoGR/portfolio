@@ -5,13 +5,17 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.main-bg {
+body {
     color: var(--main-text-color);
     background: var(--main-bg-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
+}
+
+main {
+    align-self: center;
 }
 
 html {
@@ -39,4 +43,11 @@ section {
 
 .title {
     margin-bottom: 0px;
+}
+
+@media (768px < width) {
+    main {
+        max-width: 60%;
+        align-self: center;
+    }
 }
