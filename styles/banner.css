@@ -1,5 +1,6 @@
 .banner {
     height: 35vh;
+    max-height: 500px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -35,9 +36,13 @@
 }
 
 @media (1440px < width) {
+  .banner {
+    max-height: 365px;
+  }
   .banner .banner__image {
     background-image: url(../assets/img/neom-unsplash-4k.jpg);
   }
+  
 }
 
 .banner__content .title {
